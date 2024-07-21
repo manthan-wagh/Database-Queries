@@ -1,0 +1,40 @@
+Fantasy Sports League Database 🏏Design a database for managing a fantasy sports league. 
+This project involves creating a system to manage teams, players, matches, and scoring.Skills ⚒️: Complex data modelling and relationships, 
+Advanced SQL queries (including ranking functions), Integration of external data sources
+
+1. *Teams*
+    - team_id (Primary Key)
+    - team_name
+    - owner_name
+    - creation_date
+
+2. *Players*
+    - player_id (Primary Key)
+    - player_name
+    - position
+    - team_id (Foreign Key)
+
+3. *Matches*
+    - match_id (Primary Key)
+    - team1_id (Foreign Key referencing Teams)
+    - team2_id (Foreign Key referencing Teams)
+    - match_date
+
+4. *Scores*
+    - score_id (Primary Key)
+    - match_id (Foreign Key referencing Matches)
+    - player_id (Foreign Key referencing Players)
+    - points_scored
+
+5. *League*
+    - league_id (Primary Key)
+    - league_name
+    - season
+    - start_date
+    - end_date
+
+6. *Team_League*
+    - team_league_id (Primary Key)
+    - team_id (Foreign Key referencing Teams)
+    - league_id (Foreign Key referencing League)
+
