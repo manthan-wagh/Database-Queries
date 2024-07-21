@@ -1,0 +1,35 @@
+Environmental Impact Tracker 🏞️
+Develop a database system to track and analyse the environmental impact of various activities and projects. 
+This could be used by organisations to monitor their carbon footprint and other environmental metrics.
+Skills ⚒️: Environmental data modelling, Data aggregation and analysis, Practical application in sustainability and impact assessment.
+
+1. *Organizations*
+    - organization_id (Primary Key)
+    - organization_name
+    - contact_person
+    - contact_email
+    - created_at
+
+2. *Projects*
+    - project_id (Primary Key)
+    - project_name
+    - organization_id (Foreign Key)
+    - start_date
+    - end_date
+
+3. *Activities*
+    - activity_id (Primary Key)
+    - project_id (Foreign Key)
+    - activity_name
+    - activity_date
+    - carbon_emissions (in kg CO2e)
+    - water_usage (in liters)
+    - energy_consumption (in kWh)
+
+4. *Impact_Metrics*
+    - metric_id (Primary Key)
+    - activity_id (Foreign Key)
+    - metric_name
+    - metric_value
+    - unit
+    - recorded_at
