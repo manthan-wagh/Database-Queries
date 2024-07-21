@@ -1,0 +1,29 @@
+Music Recommendation System 🎼
+Create a SQL-based music recommendation system that suggests songs to users based on their listening history and preferences.
+Skills ⚒️: Data analysis and user profiling, Complex SQL queries (including JOINs and subqueries), Application of recommendation algorithms using SQL
+
+1. *Users*
+    - user_id (Primary Key)
+    - username
+    - email
+    - created_at
+
+2. *Songs*
+    - song_id (Primary Key)
+    - song_name
+    - artist
+    - genre
+    - release_date
+
+3. *User_Song_History*
+    - history_id (Primary Key)
+    - user_id (Foreign Key)
+    - song_id (Foreign Key)
+    - listen_count
+    - last_listened
+
+4. *User_Preferences*
+    - preference_id (Primary Key)
+    - user_id (Foreign Key)
+    - genre
+    - preference_score
